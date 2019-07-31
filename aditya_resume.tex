@@ -1,0 +1,152 @@
+%-------------------------
+% Resume in Latex
+% Author : Aditya Wagh
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\projectItem}[2]{
+  \item\small{
+    \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://ad1tyawagh.github.io}{\Large Aditya Wagh}} & Email : \href{mailto:adityamwagh@gmail.com}{adityamwagh@gmail.com}\\
+  \href{https://ad1tyawagh.github.io}{https://ad1tyawagh.github.io} & Mobile : +91-850-300-8530 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Birla Institute of Technology and Science}{Pilani, India}
+      {Bachelor of Engineering in Electronics and Instrumentation;  GPA: 5.55}{Aug. 2015 -- July. 2019}
+
+      \resumeSubheading
+      {Loknete Vyankatrao Hiray Arts, Science and Commerce College}{Nashik, India}
+      {Higher Secondary Certificate, MSBSHSE;  85.69 \% }{Aug. 2015 -- July. 2019}
+
+      \resumeSubheading
+      {Symbiosis School}{Nashik, India}
+      {All India Secondary School Examination, CBSE;  GPA: 10}{Aug. 2015 -- July. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CSIR -Central Electronics Engineering Institute}{Pilani, India}
+      {Research Assistant}{July 2018 - December 2018}
+      \resumeItemListStart 
+        \resumeItem{Annotated part of a dataset comprising of images of healthy power lines}
+        \resumeItem{Trained a masked region proposal convolutional neural network}
+        \resumeItem{Annotated part of a dataset comprising of images of healthy power lines}
+        
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Variable computation using recurrent neural networks}
+      {Open source python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{FIR Filter design using an adjustable window function}
+      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+  }
+    \item{
+      \textbf{Languages}{: Python, C, C++, MATLAB, bash}
+    }
+    \item{
+      \textbf{Frameworks and Libraries}{: Keras, Tensorflow, OpenCV, NumPy, Matplotlib, STL}
+    \item{
+      \textbf{Operating Systems}{: Windows, Linux}
+    }
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
