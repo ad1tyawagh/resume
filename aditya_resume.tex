@@ -6,7 +6,8 @@
 % Date Modified : 01/06/2019
 %------------------------
 
-\documentclass[letterpaper,10pt]{article}
+
+\documentclass[a4paper]{article}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{latexsym}
 \usepackage{titlesec}
@@ -61,12 +62,12 @@ left=23.1mm
 
 
 %\colorlet{varHeadingColor}{MidnightBlue}
-\colorlet{varHeadingColor}{NavyBlue}
+%\colorlet{varHeadingColor}{NavyBlue}
 %\colorlet{varHeadingColor}{ProcessBlue}
 %\colorlet{varHeadingColor}{Turquoise}
 %\colorlet{varHeadingColor}{TealBlue}
 %\colorlet{varHeadingColor}{Cerulean}
-%\colorlet{varHeadingColor}{DodgerBlue2}
+\colorlet{varHeadingColor}{DodgerBlue2}
 %\colorlet{varHeadingColor}{CornflowerBlue}
 %\colorlet{varHeadingColor}{DodgerBlue4}
 
@@ -82,19 +83,6 @@ left=23.1mm
 	\item\small{
 		\textbf{#1}{: #2 \vspace{-5pt}}
 	}
-}
-
-\newcommand{\resumeHeader}[4]{
-	\begin{center}
-		{\color{varHeadingColor}
-			\textbf{\huge{#1}}} \\
-		\vspace*{10pt}
-		\begin{vwcol}[widths={0.30,0.40,0.33},
-			justify=flush,rule=0pt] 
-			{{\color{varHeadingColor}Phone:} #2\\ \\}\hspace{0pt}{{\color{varHeadingColor}Email:} #3\\ }{{\color{varHeadingColor}Links:} #4}
-		\end{vwcol}
-		\vspace*{0pt}
-	\end{center}
 }
 
 \newcommand{\resumeSubheadingEducation}[4]{
@@ -138,8 +126,11 @@ left=23.1mm
 	
 	%
 	%----------HEADING-----------------
-	\resumeHeader{\href{https://www.adityawagh.ml}{ADITYA WAGH}}{+91 744 779 3555 }{\href{mailto:aditya@adityawagh.ml}{aditya@adityawagh.ml} \\ \hspace*{29pt} \href{mailto:f2015382p@alumni.bits-pilani.ac.in}{f2015382p@alumni.bits-pilani.ac.in}}{\href{https://www.linkedin.com/in/waghaditya/}{Linkedin} \\ \hspace*{27pt} \href{https://github.com/ad1tyawagh}{Github}}
-	
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://adityawagh.ml/}{\Large \color{varHeadingColor} ADITYA WAGH}} & {\color{varHeadingColor}Email} : \href{mailto:aditya@adityawagh.ml}{aditya@adityawagh.ml}\\
+  \href{http://adityawagh.ml/}{http://www.adityawagh.ml} & {\color{varHeadingColor}Mobile} : +91-74477-93555 \\
+\end{tabular*}
+
 
 	
 	%-------------------------------------------
