@@ -27,10 +27,10 @@
 \hbadness=10000
 %\usepackage[empty]{fullpage}
 %otherwise
-\usepackage[paper=a4paper,
-top=25.1mm,
-bottom=25.1mm,
-right=23.1mm,
+\usepackage[paper=letterpaper,
+top=21.1mm,
+bottom=21.1mm,
+right=21.1mm,
 left=23.1mm
 ]{geometry}
 
@@ -81,16 +81,20 @@ left=23.1mm
 	\end{tabular*}
 }
 
-\newcommand{\resumeSubheading}[4]{
+% \newcommand{\resumeSubheading}[4]{
+% 	\vspace{-1pt}\item
+% 	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+% 		\textbf{\normalsize #1} & {\normalsize #2} \\
+% 		\textit{\small#3} & \textit{\small #4} \\
+% 	\end{tabular*}
+% 	\smallskip \\
+% }
+\newcommand{\resumeSubheading}[2]{
 	\vspace{-1pt}\item
-	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-		\textbf{\normalsize #1} & {\normalsize #2} \\
-		\textit{\small#3} & \textit{\small #4} \\
-	\end{tabular*}
-	\smallskip \\
+	{\textbf{\noindent #1}} \hfill {#2} \\
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{0pt}}
 \newcommand{\resumeSubItemOneArg}[1]{\item \small #1\vspace{-1pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -115,7 +119,7 @@ left=23.1mm
     \href{http://adityawagh.ml/}{http://www.adityawagh.ml} & {\color{varHeadingColor}Phone} : +91-74477-93555 \\
 \end{tabular*}
 
-
+\vspace{-2pt}
 %  EDUCATION
 
 \section{Education}
@@ -124,7 +128,8 @@ left=23.1mm
 \resumeSubheadingEducation
 {Birla Institute of Technology and Science (BITS), Pilani}{\textbf{Pilani, India}}
 {Bachelor of Engineering with Honors in Electronics and Instrumentation, {\small \emph{GPA}: 5.55/10} \vspace{1pt}}  {Aug 2015 -- Jul 2019} \vspace{1pt} \\
-{\justifying \small \emph{Relevant coursework}: Computer Programming, Digital Design, Microprocessors and Interfacing, Computer Architecture, Discrete Mathematics,  Neural Networks and Fuzzy Logic, , Digital Signal Processing,  Probability \& Statistics,}
+{\justifying \small \emph{\underline{Relevant coursework}}: Neural Networks and Fuzzy Logic, Computer Architecture, Data Communication \& Networks, Digital Signal Processing, Control Systems, Microprocessors and Interfacing, Discrete Mathematics, Computer Programming, Probability \& Statistics, Linear Algebra}
+
 \vspace{-5pt}
 \resumeSubheadingEducation
 {LVH Arts, Science \& Commerce College}{\textbf{Nashik, India}}
@@ -145,7 +150,7 @@ left=23.1mm
 \resumeSubItem{Development Languages}
 {Python, C, C++, MATLAB, Shell, \LaTeX, HTML, CSS, JavaScript}
 \resumeSubItem{Tools, Frameworks and Libraries}
-{Keras, Tensorflow, OpenCV, Git, MATLAB, Simulink, LabVIEW, React, Bootstrap}
+{Keras, TensorFlow, PyTorch, OpenCV, MATLAB, Simulink, LabVIEW, Bootstrap, Git}
 \resumeSubHeadingListEnd
 
 
@@ -155,54 +160,47 @@ left=23.1mm
 \justifying
 \resumeSubHeadingListStart
 \resumeSubheading
-{Integrated Systems Lab}{\textbf{Central Electronics Engineering Research Institute, Pilani}}
-{Undergraduate Research Assistant}{Jul 2018 -- Dec 2018}
+{Research Assistant, Central Electronics Engineering Research Institute, Pilani}{Jul 2018 -- Dec 2018}
 %\vspace{2pt} \\
-\emph{Project}: Detection of faulty power transmission lines using Region Proposal Convolutional Neural Networks(RCNNs)
+\emph{Project}: Detection of faulty power transmission lines from aerial images using Mask R-CNN
 \resumeItemListStart
-\resumeSubItemOneArg{Strategized and contributed in development of software pipeline to annotate powerline data}
-\resumeSubItemOneArg{Responsible for modelling, training and optimising a Convolutional Neural Network to detect healthy power lines.}
-\resumeSubItemOneArg{Trained a masked region proposal convolutional neural network having a ResNet-101 and FPN Backbone.}
+\resumeSubItemOneArg{Reviewed and compared the state-of-the-art instance segmentation models for aerial images.}
+\resumeSubItemOneArg{Improved mAP by 4.31 over other existing models using salience biased loss function with the \textbf{Mask RCNN} architecture.}
+\resumeSubItemOneArg{Contributed in development of software pipeline to annotate 8000+ Infrared and RBD images TV-L power-line dataset.}
 \resumeItemListEnd
-
+\vspace{-5pt}
 \resumeSubheading
-{IT Department}{\textbf{Apras Polymers \& Engineering Co.Pvt. Ltd, Nashik}}
-{Intern}{May 2018 -- Jul 2018}
+{Software Intern, Apras Polymers \& Engineering Co.Pvt. Ltd, Nashik}{May 2018 -- Jul 2018}
 %\vspace{2pt} \\
-\emph{Project}: Detection of faulty power transmission lines using Region Proposal Convolutional Neural Networks(RCNNs)
+\emph{Project}: A Business2Consumer website using Bootstrap and Jekyll.
 \resumeItemListStart
-\resumeSubItemOneArg{Project focused on decreasing costs and increasing safety of inspecting power lines by replacing helicopter inspection with drones.}
-\resumeSubItemOneArg{Part of a team responsible for annotating a dataset of 8000 RGB and Infrared images of power transmisison cables.}
-\resumeSubItemOneArg{Responsible for modelling, training and optimising a Convolutional Neural Network to detect healthy power lines.}
-\resumeSubItemOneArg{Trained a masked region proposal convolutional neural network having a ResNet-101 and FPN Backbone.}
+\resumeSubItemOneArg{Created the UI of the website using the \textbf{Figma tool} and developed the front end using the \textbf{Bootstrap} CSS framework.}
+\resumeSubItemOneArg{Generated the skeleton of the website using \textbf{HTML} and \textbf{Jekyll v4} and animated the components using \textbf{animate.css}}
 \resumeItemListEnd
-
+\vspace{-5pt}
 \resumeSubheading
-{IT Department}{\textbf{The Ramco Cements Ltd, Jaggayapeta}}
-{Intern}{May 2017 -- Jul 2017}
+{Software Intern, The Ramco Cements Ltd, Jaggayapeta}{May 2017 -- Jul 2017}
 %\vspace{2pt} \\
-\emph{Project}: Detection of faulty power transmission lines using Region Proposal Convolutional Neural Networks(RCNNs)
+\emph{Project}: Design of a Inventory Management Web application for the Plant
 \resumeItemListStart
-\resumeSubItemOneArg{Project focused on decreasing costs and increasing safety of inspecting power lines by replacing helicopter inspection with drones.}
-\resumeSubItemOneArg{Part of a team responsible for annotating a dataset of 8000 RGB and Infrared images of power transmisison cables.}
-\resumeSubItemOneArg{Responsible for modelling, training and optimising a Convolutional Neural Network to detect healthy power lines.}
-\resumeSubItemOneArg{Trained a masked region proposal convolutional neural network having a ResNet-101 and FPN Backbone.}
-\resumeItemListEnd
-%	\vspace{-5pt}
+\resumeSubItemOneArg{Designed the UI of the portal using the \textbf{Figma tool} and wrote the front end using \textbf{.NET}(ASP.NET and VB.NET)}
+\resumeSubItemOneArg{Designed a relational database to store inventory details using \textbf{Microsoft SQL Server}.}
+
+	\vspace{-5pt}
 \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
+\vspace{-5pt}
 % PROJECTS
 
 \section{Projects}
 \resumeSubHeadingListStart
-\resumeSubItem{Oriented Object Detection on Aerial Images (2018)}{
+\resumeSubItem{Oriented Object Detection on Aerial Images}{
     \resumeItemListStart
-     \resumeSubItemOneArg{Designed a signal conditioning circuit for a microphone using OPAMPS.}
-      \resumeSubItemOneArg{Utilised the condenser microphone as a capacitance in the RC Filter Circuit. }
-      \resumeSubItemOneArg{Interfaced the circuit with the computer using NI-DAQmx data acquisition card and interpreted noisy signals in LabVIEW.}
+     \resumeSubItemOneArg{Researched object detection methods for oriented text detection}
+      \resumeSubItemOneArg{Achieved around 65 mAP on the DOTA dataset by transfer learning on the R2CNN model.}
        \resumeItemListEnd
 }
-\resumeSubItem{Variable Computation in Recurrent Neural Networks (2017)}{
+\resumeSubItem{Variable Computation in Recurrent Neural Networks}{
     \resumeItemListStart
     \resumeSubItemOneArg{Modified a RNN model to make it learn to vary the amount of computation according to the sequence that they process.}
     \resumeSubItemOneArg{Implemented a scheduler for the RNN unit which decides the computation required at the current timestep.}
@@ -210,23 +208,31 @@ left=23.1mm
     \resumeItemListEnd
     \vspace{-5pt}
 
-\resumeSubItem{Microphone Signal Conditioning System (2017)}{
-    \resumeItemListStart
-     \resumeSubItemOneArg{Designed a signal conditioning circuit for a microphone using OPAMPS.}
-      \resumeSubItemOneArg{Utilised the condenser microphone as a capacitance in the RC Filter Circuit. }
-      \resumeSubItemOneArg{Interfaced the circuit with the computer using NI-DAQmx data acquisition card and interpreted noisy signals in LabVIEW.}
-       \resumeItemListEnd
+% \resumeSubItem{Microphone Signal Conditioning System (2017)}{
+%     \resumeItemListStart
+%      \resumeSubItemOneArg{Designed a signal conditioning circuit for a microphone using OPAMPS.}
+%       \resumeSubItemOneArg{Utilised the condenser microphone as a capacitance in the RC Filter Circuit. }
+%       \resumeSubItemOneArg{Interfaced the circuit with the computer using NI-DAQmx data acquisition card and interpreted noisy signals in LabVIEW.}
+%       \resumeItemListEnd
+% }
+
+\resumeSubItem{RISC Processor Design using HDL}{
+\resumeItemListStart
+    \resumeSubItemOneArg{Designed, programmed and tested 16-bit multi-cycle processor for a given set of instructions and constraints.}
+    \resumeSubItemOneArg{Followed modular approach for programming the processor and its test bench, by dividing it into sub-modules such
+as memory, register file, ALU and control unit. }
+\resumeItemListEnd
 }
-\resumeSubItem{Finite Impulse Response filter design using an adjustable window filter  (2017)}{
+
+\resumeSubItem{Finite Impulse Response filter design using an adjustable window filter}{
       \resumeItemListStart
       \resumeSubItemOneArg{Implemented an adjustable window function based on the combination of Blackman and Lanczos window.}
-      \resumeSubItemOneArg{Achieved a 75\% better better side-lobe roll off ratio than Lanczos window.}
-      \resumeSubItemOneArg{Denoised an ECG Signal using this filter.}
+      \resumeSubItemOneArg{Achieved a 75\% better side-lobe roll off ratio than Lanczos window.}
       \resumeItemListEnd
     }
 }
 
-\vspace{5pt}
+% \vspace{-5pt}
 \resumeSubHeadingListEnd
 
 
@@ -243,26 +249,20 @@ left=23.1mm
 \section{Volunteer Experience}
 \resumeSubHeadingListStart
 \resumeSubheading
-{Vice-Chairperson}{\emph{Jul 2017 - May 2018}}
-{IEEE Student Branch, BITS Pilani}{}
-Organised IEEE affiliated events like conclaves, workshops and various technical events throughout the year.
-\resumeItemListStart
-\resumeSubItemOneArg{Worked on promoting IEEE Student memberships in the campus by organising membership drives explaining it's benefits.}
+{Vice-Chairperson, IEEE Student Branch, BITS Pilani}{Jul 2017 - May 2018}
+\resumeItemListStart \vspace{-12pt}
+\resumeSubItemOneArg{Promoted IEEE Student memberships by 30\% in the campus by organising membership drives, workshops and technical events}
 % 	\resumeSubItemOneArg{Increased the participation in all the events organized by more than 40 percent than last few years.}
-\resumeSubItemOneArg{Responsible for setting up the IEEE hosted website for the chapter. }
-\resumeSubItemOneArg{Conceived the organisational hierarchy of the chapter, introducing various managerial and technical posts.}
-\resumeSubItemOneArg{Authored and published the first issue of IEEE Insight, the monthly newsletter of the chapter.
-}
+\resumeSubItemOneArg{Responsible for setting up the IEEE hosted website for the chapter and IEEE Insight, the monthly newsletter of the chapter.}
+\resumeSubItemOneArg{Revamped the organisational hierarchy of the chapter, introducing various managerial and technical posts.}
 \resumeItemListEnd
-%	\vspace{-5pt}
+	\vspace{-5pt}
 \resumeSubheading
-{Member, Governing Council(GC)}{\emph{Aug 2018 - July 2019}}
-{Society for Students Mess Services, BITS Pilani}{}
-Part of the Quality, Health \& Safety Environment(QHSE) and Human Resource(HR) committee
-\resumeItemListStart
-\resumeSubItemOneArg{\textbf{Mess Representative: }{Responsible for sanctioning leaves of the workers, collecting feedback and taking necessary actions.}}
-\resumeSubItemOneArg{\textbf{QHSE: }{Drafted a QHSE framework for SSMS activities and conducted regular audits every semester.}}
-\resumeSubItemOneArg{\textbf{HR: }{Responsible for performance appraisals, providing education/medical loans and  managing internal worker conflicts.}}
+{Governing Council Member, Society for Students Mess Services, BITS Pilani}{Aug 2018 - July 2019}
+\resumeItemListStart \vspace{-12pt}
+\resumeSubItemOneArg{\textbf{Mess Representative:} Responsible for sanctioning leaves of the workers, collecting feedback and taking necessary actions.}
+\resumeSubItemOneArg{\textbf{QHSE:}}{Drafted a QHSE framework for SSMS activities and conducted regular audits every semester.}
+\resumeSubItemOneArg{\textbf{HR:}}{Responsible for performance appraisals, providing education/medical loans and  managing internal worker conflicts.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -270,24 +270,31 @@ Part of the Quality, Health \& Safety Environment(QHSE) and Human Resource(HR) c
 
 % CCERTIFICATIONS
 
+% \section{Certifications}
+
+% \justifying
+% \resumeSubHeadingListStart
+
+% \resumeSubItem{\href{https://students.codingninjas.com/verify/0e0427a922f32cf0}{Introduction to Python}}
+% {\hfill{Coding Ninjas}}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \resumeSubItem{\href{https://www.coursera.org/account/accomplishments/certificate/PERFF99LL8T7}{Mathematics for Machine Learning}}
+% {\hfill{University College London (UCL), Coursera}}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \resumeSubItem{\href{https://www.coursera.org/account/accomplishments/certificate/KJBZ3XKKYAXM}{Deep Learning}}
+% {\hfill{deeplearning.ai, Coursera}}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \resumeSubItem{\href{https://www.coursera.org/account/accomplishments/certificate/7G4V3W8T4J7L}{Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning}}
+% {\hfill{deeplearning.ai, Coursera}}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \resumeSubItem{\href{https://www.coursera.org/account/accomplishments/certificate/HHUQBSMH53JY}{Convolutional Neural Networks in TensorFlow}}
+% {\hfill{deeplearning.ai, Coursera}}
+% \resumeSubHeadingListEnd
+
 \section{Certifications}
 
 \justifying
-\resumeSubHeadingListStart
 
-\resumeSubItem{\href{https://students.codingninjas.com/verify/0e0427a922f32cf0}{Introduction to Python}}
-{\hfill{Coding Ninjas}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resumeSubItem{\href{https://www.coursera.org/account/accomplishments/certificate/PERFF99LL8T7}{Mathematics for Machine Learning}}
-{\hfill{University College London (UCL), Coursera}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resumeSubItem{\href{https://www.coursera.org/account/accomplishments/certificate/KJBZ3XKKYAXM}{Deep Learning}}
-{\hfill{deeplearning.ai, Coursera}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resumeSubItem{\href{https://www.coursera.org/account/accomplishments/certificate/7G4V3W8T4J7L}{Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning}}
-{\hfill{deeplearning.ai, Coursera}}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resumeSubItem{\href{https://www.coursera.org/account/accomplishments/certificate/HHUQBSMH53JY}{Convolutional Neural Networks in TensorFlow}}
-{\hfill{deeplearning.ai, Coursera}}
-\resumeSubHeadingListEnd
+{\href{https://students.codingninjas.com/verify/0e0427a922f32cf0}{{\textbf{Introduction to Python}}}(Coding Ninjas)}; {\href{https://www.coursera.org/account/accomplishments/certificate/PERFF99LL8T7}{\textbf{Mathematics for Machine Learning}}(Coursera)}; {\href{https://www.coursera.org/account/accomplishments/certificate/KJBZ3XKKYAXM}{\textbf{Deep Learning}}(Coursera)}; {\href{https://www.coursera.org/account/accomplishments/certificate/7G4V3W8T4J7L}{\textbf{Introduction to TensorFlow}}(Coursera)}; {\href{https://www.coursera.org/account/accomplishments/certificate/HHUQBSMH53JY}{\textbf{Convolutional Neural Networks in TensorFlow}}(Coursera)}
+
 \end{document}
